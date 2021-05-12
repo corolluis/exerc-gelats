@@ -1,0 +1,19 @@
+<script>
+    function triarTipus() {
+        segonPlat = document.getElementById("tipus").value;
+        resultat_segonPlat = document.getElementById("resultat_tipus");
+        text_tipus = document.getElementById("text_tipus");
+        if (segonPlat == "lassanya") {
+            resultat_segonPlat.innerHTML = "<img src='img/lassanya.jpg' style='max-width:100%'>";
+            text_tipus.innerHTML = "<select class='desplegable' id='tipus' onChange='triarSegon()''><option disabled selected></option><option selected value='lassanya'>Lassanya de verdures</option><option value='galtes'>Galtes de porc</option><option value='arros'>Arròs a la cassola</option></select> LASSANYA DE VERDURES";
+        } else if (segonPlat == "galtes") {
+            resultat_segonPlat.innerHTML = "<img src='img/galtes.jpg' style='max-width:100%'>";
+            text_tipus.innerHTML = "<select class='desplegable' id='tipus' onChange='triarSegon()''><option disabled selected></option><option value='lassanya'>Lassanya de verdures</option><option selected value='galtes'>Galtes de porc</option><option value='arros'>Arròs a la cassola</option></select> GALTES DE PORC";
+        } else {
+            resultat_segonPlat.innerHTML = "<img src='img/arros.jpg' style='max-width:100%'>";
+            text_tipus.innerHTML = "<select class='desplegable' id='tipus' onChange='triarSegon()''><option disabled selected></option><option value='lassanya'>Lassanya de verdures</option><option value='galtes'>Galtes de porc</option><option selected value='arros'>Arròs a la cassola</option></select> ARRÒS A LA CASSOLA";
+        }
+    }
+
+
+</script>

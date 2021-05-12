@@ -1,0 +1,28 @@
+<script>
+    function triarToppings() {
+        mida = document.getElementById("mida").value;
+        resultat_mida = document.getElementById("resultat_mida");
+        text_mida = document.getElementById("text_mida")
+        if (mida == "coulant") {
+            resultat_mida.innerHTML = "<img src='img/coulant.jpg' style='max-width:100%'>";
+            text_mida.innerHTML = "<select class='desplegable' id='mida' onChange='triarPostres()''><option disabled selected></option><option selected value='coulant'>Coulant de xocolata negra</option><option value='xuixo'>Xuixo de crema</option><option value='maduixes'>Maduixes amb nata</option></select> COULANT DE XOCOLATA NEGRA";
+
+        } else if (mida == "xuixo") {
+            resultat_mida.innerHTML = "<img src='img/xuixo.jpg' style='max-width:100%'>";
+            text_mida.innerHTML = "<select class='desplegable' id='mida' onChange='triarPostres()''><option disabled selected></option><option value='coulant'>Coulant de xocolata negra</option><option selected value='xuixo'>Xuixo de crema</option><option value='maduixes'>Maduixes amb nata</option></select> XUIXO DE CREMA";
+        } else {
+            resultat_mida.innerHTML = "<img src='img/maduixes.jpg' style='max-width:100%'>";
+            text_mida.innerHTML = "<select class='desplegable' id='mida' onChange='triarPostres()''><option disabled selected></option><option value='coulant'>Coulant de xocolata negra</option><option value='xuixo'>Xuixo de crema</option><option selected value='maduixes'>Maduixes amb nata</option></select> MADUIXES AMB NATA";
+        }
+    }
+
+
+
+</script>
+
+<script>
+
+    function ferComanda() {
+            window.alert("Fet i enviat! Espera'ns amb gana!");
+        }
+</script>

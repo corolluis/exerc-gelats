@@ -1,0 +1,22 @@
+<script>
+    function triarGust() {
+        gust = document.getElementById("gust").value;
+        resultat_gust = document.getElementById("resultat_gust");
+        text_gust = document.getElementById("text_gust");
+        if (gust == "xocolata") {
+            resultat_gust.innerHTML = "<img src='img/xocolata.jpg' style='max-width:100%'>";
+            text_gust.innerHTML = "<select class='desplegable' id='gust' onChange='triarGust()'><option disabled selected></option><option selected value='xocolata'>Xocolata</option><option value='maduixa'>Maduixa</option><option value='stracciatella'>Stracciatella</option></select> XOCOLATA";
+        } else if (gust == "maduixa") {
+            resultat_gust.innerHTML = "<img src='img/maduixa.jpg' style='max-width:100%'>";
+            text_gust.innerHTML = "<select class='desplegable' id='gust' onChange='triarGust()'><option disabled selected></option><option value='xocolata'>Xocolata</option><option selected value='maduixa'>Maduixa</option><option value='stracciatella'>Stracciatella</option></select> MADUIXA";
+        } else {
+            resultat_gust.innerHTML = "<img src='img/stracciatella.jpg' style='max-width:100%'>";
+            text_gust.innerHTML = "<select class='desplegable' id='gust' onChange='triarGust()'><option disabled selected></option><option value='xocolata'>Xocolata</option><option value='maduixa'>Maduixa</option><option selected value='stracciatella'>Stracciatella</option></select> STRACCIATELLA";
+        }
+    }
+
+
+
+
+
+</script>
